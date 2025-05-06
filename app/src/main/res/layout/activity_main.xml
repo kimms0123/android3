@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- LinearLayout: 자식 뷰들을 하나의 방향으로 일렬로 배치하는 레이아웃 컨테이너 -->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:id="@+id/main"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical">-->
+<!--  예제 1  -->
+<!--    <TextView-->
+<!--        android:id="@+id/textView1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="성별 선택"/>-->
+<!--    <RadioButton-->
+<!--        android:id="@+id/female"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="여성"/>-->
+<!--    <RadioButton-->
+<!--        android:id="@+id/male"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="남성"/>-->
+
+<!--    &lt;!&ndash; 예제 2,3,4,5,6  &ndash;&gt;-->
+<!--&lt;!&ndash;  wrap_content: 버튼 너비가 글자에 맞춰 생성  &ndash;&gt;-->
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="버튼입니다"/>-->
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="버튼입니다"/>-->
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:text="버튼입니다" />-->
+
+<!--&lt;!&ndash;  match_parent(fill_parent): 글자와 관계 없이 버튼을 싸고 있는 부모(현.리니어레이어)너비에 맞춰 크기 설정   &ndash;&gt;-->
+<!--    <Button-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:text="버튼입니다"/>-->
+
+<!--&lt;!&ndash;  값을 숫자로 지정 가능 (보통 px 사용)-->
+<!--      match_parent로 지정한 것처럼 버튼이 화면에 꽉참-->
+<!--&ndash;&gt;-->
+<!--&lt;!&ndash;-->
+<!--  위젯 크기 지정 단위-->
+<!--  in: 실제 화면의 물리적 인치 단위 (1인치 = 약 2.54cm)-->
+<!--  mm: 실제 화면의 물리적 mm 단위-->
+<!--  pt: 1pt = 1/72인치. 인쇄 매체에 주로 사용하는 단위-->
+<!--  *dp*: 화면 밀도에 따라 크기가 자동으로 조절되는 픽셀 단위-->
+<!--  *sp*: dp와 비슷하나 사용자 글꼴 크기, 설정에 따라 크기가 조정되는 단위(주로 텍스트 크기에 사용)-->
+<!--  *px*: 화념의 실제 픽셀 수.(화면 해상도에 따라 상대적 크기)-->
+<!--  &ndash;&gt;-->
+<!--    <Button-->
+<!--        android:layout_width="1080px"-->
+<!--        android:layout_height="1920px"-->
+<!--        android:text="버튼입니다"/>-->
+<!--&lt;!&ndash;  backgroud 속성: 버튼 색 변경  &ndash;&gt;-->
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#00ff00"-->
+<!--        android:text="버튼입니다"/>-->
+
+<!--&lt;!&ndash;  예제8  &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/hello_world"/>-->
+<!--    <Button-->
+<!--        android:id="@+id/button1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Button"/>-->
+
+<!--  LinearLayout  -->
+
+<!-- 간격이 없는 xml 코드 -->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:id="@+id/main"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:orientation="vertical">-->
+<!--<TextView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="아래에 이름을 입력: "/>-->
+<!--<EditText-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:hint="여기에 채우세요"/>-->
+<!--<Button-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="확인"/>-->
+<!--</LinearLayout>-->
+
+<!--</LinearLayout>-->
+
+<!-- padding 속성 xml 코드-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:id="@+id/main"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:orientation="vertical">-->
+<!--<TextView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="아래애 입력"/>-->
+<!--<EditText-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="여기에 채우세요"/>-->
+<!--<Button-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="확인"/>-->
+<!--</LinearLayout>-->
+
+<!-- layout_margin 속성 xml 코드-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:id="@+id/main"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--    android:padding="30dp"-->
+<!--android:orientation="vertical">-->
+<!--<TextView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_margin="20dp"-->
+<!--    android:text="아래에 이름을 입력: "/>-->
+<!--    <EditText-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:hint="여기에 채우세요"/>-->
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:text="확인"/>-->
+<!--</LinearLayout>-->
+
+<!-- visibility 속성 -->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:id="@+id/main"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:orientation="vertical">-->
+<!--<Button-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="버튼 1"/>-->
+
+<!--&lt;!&ndash; visibility: 뷰(View)의 화면 표시 여부를 결정하는 속성-->
+<!--     visible(디폴트): 보이는 상태, 뷰가 공간도 차지하고 화면에 표시함-->
+<!--     invisible: 화면에 안 보임, 근데 공간은 그대로 차지-->
+<!--     gone: 화면에도 안 보이고 공간도 차지 안 함, 완전히 없는 것처럼 처리-->
+<!-- &ndash;&gt;-->
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:visibility="invisible"-->
+<!--        android:text="버튼 2"/>-->
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:visibility="visible"-->
+<!--        android:text="버튼 3"/>-->
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:visibility="gone"-->
+<!--        android:text="버튼 4"/>-->
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="버튼 5"/>-->
+<!--</LinearLayout>-->
+
+<!-- enabled, clickable 속성의 xml 코드
+     enabled: 뷰 활성화(사용)할지, 비활성화(사용 불가)할지 설정하는 속성 => 뷰가 작동 가능한 상태인지 설정
+        - ture: 사용 가능(기본값)
+        - false: 사용 불가(비활성화)
+
+     clickable: 뷰를 클릭할 수 있게 할지 말지 정하는 속성 => 클릭 이벤트를 받을 수 있는지 설정
+        - true: 클릭 가능(기본값: Button 같은 건 ture)
+        - false: 클릭 불가
+ -->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:tools="http://schemas.android.com/tools"-->
+<!--android:id="@+id/main"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:orientation="vertical">-->
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="버튼 1"/>-->
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:enabled="false"-->
+<!--        android:text="버튼 2"/>-->
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:clickable="false"-->
+<!--        android:text="버튼 3"/>-->
+<!--</LinearLayout>-->
+
+<!-- rotation 속성
+     rotation: 뷰를 z축(화면을 기준으로 정면에서 보는 방향)으로 회전시키는 속성
+        - 단위: 도(degree)
+        - 양수(+) 값 -> 시계 방향으로 회전
+        - 음수(-) 값 -> 반시계 방향으로 회전
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:orientation="vertical">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼 1"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="버튼 2"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="45"
+        android:text="버튼 3"/>
+</LinearLayout>
