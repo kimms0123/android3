@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+    <!-- 컴파운드 버튼 -->
+    <!--  checkBox: 클릭할 때마다 상태가 체크, 언체크로 바뀜/ 여러 개가 있어도 독립적으로 동작함(여러개 동시 체크 가능)
+          코틀린에서는 강제로 체크를 켜거나 끄는 setChecked(), 체크 상태를 반대로 바꾸는 toggle(), 체크되었는지 확인 하는 isChecked()등의 메소드 사용
+          체크/언체크 이벤트 발생시 setOnCheckedChangeListener 람다식 사용 가능
+      -->
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/android"
+        android:text="안드로이드"
+        android:checked="true"/>
+    <!--  체크 안됨  -->
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iphone"
+        android:text="아이폰"/>
+    <!-- 체크 O -->
+    <!--    <CheckBox-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/window"-->
+    <!--        android:text="윈도폰"-->
+    <!--        android:checked="true"/>-->
+
+    <!--  스위치와 토글 버튼  -->
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"/>
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"/>
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"/>
+    <!--크게 차이가 안 보임-->
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false" />
+    <!--  라디오버튼과 라디오그룹
+          라디오 버튼: 체크박스와 거의 동일하지만 여러개 중 하나만 선택해야하는 경우에 사용
+          ! 라디오 버튼만 여러개 나열하면 모두 중복 선택 되므로 라디오 그룹(RadioGroup)과 함게 사용
+          라디오 그룹: 라디오 버튼을 묶어주는 역할 위주,(가끔 clearCheck()(=체크 해제)가 사용된다.)
+      -->
+    <!--    <RadioGroup-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:id="@+id/rGroup1">-->
+    <!--        <RadioButton-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="남성"/>-->
+    <!--        <RadioButton-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="여성"/>-->
+    <!--    </RadioGroup>-->
+
+    <!--  이미지 뷰와 이미지 버튼  -->
+    <!--
+        이미지 뷰:
+        이미지 버튼:
+    -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img"/>
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img"/>
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/img"/>
+
+</LinearLayout>
