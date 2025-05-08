@@ -27,19 +27,8 @@ class practice : AppCompatActivity(){
         btnSub = findViewById<Button>(R.id.BtnSub)
         btnMul = findViewById<Button>(R.id.BtnMul)
         btnDiv = findViewById<Button>(R.id.BtnDiv)
-        btnPri = findViewById<Button>(R.id.BtnPri) // 추가
         textResult = findViewById<TextView>(R.id.TextResult)
 
-        // 추가
-        fun isValidInput(): Boolean{
-            num1 = edit1.text.toString()
-            num2 = edit2.text.toString()
-            if(num1.isEmpty() || num2.isEmpty()){
-                Toast.makeText(this, "값을 입력하세요", Toast.LENGTH_SHORT).show()
-                return false
-            }
-            return true
-        }
             btnAdd.setOnTouchListener { view, motionEvent ->
                 num1 = edit1.text.toString()
                 num2 = edit2.text.toString()
@@ -68,16 +57,5 @@ class practice : AppCompatActivity(){
                 textResult.text = "계산 결과: " + result.toString()
                 false
             }
-
-            // 추가
-            // 터치가 아닌 클릭으로 변경 및 나머지 값을 구하는 버튼 추가 + 값을 입력하지 않고 버튼 클릭 시 오류 메세지 / 0으로 나누면 토스트 메세지 나타내고 계산 x
-            btnPri.setOnClickListener {
-                num1 = edit1.text.toString()
-                num2 = edit2.text.toString()
-                result = Integer.parseInt(num1) % Integer.parseInt(num2)
-                textResult.text = "계산 결과: " + result.toString()
-                false
-            }
-
     }
 }
