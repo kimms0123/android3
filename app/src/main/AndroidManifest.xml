@@ -22,6 +22,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".practice" android:exported="true"></activity>
+        <activity android:name=".exam02" android:exported="true"></activity>
+        <activity android:name=".practice02" android:exported="true"></activity>
     </application>
 
 </manifest>
