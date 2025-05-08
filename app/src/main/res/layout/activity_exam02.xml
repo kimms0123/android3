@@ -20,13 +20,13 @@
         android:layout_height="wrap_content"
         android:id="@+id/iphone"
         android:text="아이폰"/>
-    <!-- 체크 O -->
-    <!--    <CheckBox-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:id="@+id/window"-->
-    <!--        android:text="윈도폰"-->
-    <!--        android:checked="true"/>-->
+<!--  체크 O -->
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/window"
+            android:text="윈도폰"
+            android:checked="true"/>
 
     <!--  스위치와 토글 버튼  -->
     <Switch
@@ -51,19 +51,19 @@
           ! 라디오 버튼만 여러개 나열하면 모두 중복 선택 되므로 라디오 그룹(RadioGroup)과 함게 사용
           라디오 그룹: 라디오 버튼을 묶어주는 역할 위주,(가끔 clearCheck()(=체크 해제)가 사용된다.)
       -->
-    <!--    <RadioGroup-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:id="@+id/rGroup1">-->
-    <!--        <RadioButton-->
-    <!--            android:layout_width="wrap_content"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:text="남성"/>-->
-    <!--        <RadioButton-->
-    <!--            android:layout_width="wrap_content"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:text="여성"/>-->
-    <!--    </RadioGroup>-->
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rdGroup1">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="남성"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="여성"/>
+        </RadioGroup>
 
     <!--  이미지 뷰와 이미지 버튼  -->
     <!--
