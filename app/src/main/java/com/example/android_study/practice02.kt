@@ -26,7 +26,7 @@ class practice02 : AppCompatActivity() {
     // 각 위젯을 변수에 대입
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_petphoto)
+        setContentView(R.layout.activity_practice02)
         title = "애완동물 사진 보기"
 
         text1 = findViewById<TextView>(R.id.Text1)

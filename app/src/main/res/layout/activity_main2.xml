@@ -5,23 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+<!--  text 속성: 텍스트 뷰에 나타나는 문자열  -->
+<!--  textColor 속성: 글자의 색상 지정(#RGBGBB / #AARRGGBB 형식)  -->
+<!--  textSize 속성: 글자의 크기 지정(dp,px,in,mm,sp)  -->
     
 <!--  typeface 속성: 글자의 글꼴 지정
-      - sans
-      - serif
-      - monospace
-      - normal  
+      - sans(sans_serif): 고딕체
+      - serif: 명조체
+      - monospace: 공적폭 글꼴(각 문자 간격 동일)
+      - normal: 기본 글꼴
 -->
     
 <!--  textStyle 속성: 글자의 스타일 지정
-      - bold
-      - italic
-      - bold|italic
+      - bold: 굵은 글자
+      - italic: 이탈릭체(기울기)
+      - bold|italic: 굵고 기울인 글자
 -->
     
 <!--  singleLine 속성: 강제로 한 줄까지만 출력하고 문자열 맨 뒤에 '...' 표시
-      - ture
-      - false
+      - ture: 한 줄로만 출력하고 넘치면 '...'
+      - false: 여러 줄로 출력 가능
 -->
 <!--    <TextView-->
 <!--        android:layout_width="wrap_content"-->

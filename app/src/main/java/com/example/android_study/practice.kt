@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class practice : AppCompatActivity(){
@@ -18,7 +17,7 @@ class practice : AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_calculator)
+        setContentView(R.layout.activity_practice)
         title = "초간단 계산기"
 
         edit1 = findViewById<EditText>(R.id.Edit1)
