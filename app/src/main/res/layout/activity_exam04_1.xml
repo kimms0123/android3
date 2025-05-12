@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 테이블 레이아웃: 위젯을 표형태로 배치
+     - TableRow: 행의 수(열의 수는 <TableRow>안에 포함된 위젯의 수로 결정
+     속성
+        - layout_span: 열을 합쳐서 표시
+            ex) layout_span="2" -> 현재 셀부터 2개의 셀을 합쳐서 표시
+        - layout_column: 지정된 열에 현재 위젯을 표시
+        👆 테이블 레이아웃 안에 포함된 위젯에 설정 하는 속성
+        - stretchColumns: 지정된 열의 너비를 늘림
+        👆 <TableLayout> 자체에 설정하는 속성
+-->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableRow>
+        <Button
+            android:layout_width="60dp"
+            android:text="1"/>
+        <Button
+            android:layout_width="60dp"
+            android:layout_span="2"
+            android:text="2"/>
+        <Button
+            android:layout_width="60dp"
+            android:layout_column="1"
+            android:text="3"/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:layout_width="60dp"
+            android:layout_column="1"
+            android:text="4"/>
+        <Button
+            android:layout_width="60dp"
+            android:text="5"/>
+        <Button
+            android:layout_width="60dp"
+            android:text="6"/>
+    </TableRow>
+    <!-- TableLayout 안에 포함된 위젯은 layout_width, layout_height 속성을 생략 가능-->
+
+</TableLayout>

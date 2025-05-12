@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- RelativeLayout: (상대 레이아웃) 레이아웃 내부에 포함된 위젯을 상대적인 위치로 배치
+     - 상하좌우에 배치: 포함된 위젯 속성 중 부모(레이아웃)의 어느 위치에 배치할지 결정(7 가지 속성 존재)
+        - layout_alignParentLeft
+        - layout_centerHorizontal
+        - layout_alignParentRight
+        - layout_alignParentTop
+        - layout_centerVertical
+        - layout_alignParentBottom
+        - layout_centerParent
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--  상하 좌우에 배치  -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="위쪽"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="좌측"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="중앙"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="우측"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="아래"/>
+
+<!--  다른 위젯의 상대 위치에 배치: 다른 위젯의 특정한 곳에 배치
+      상하좌우
+        - layout_above
+        - layout_below
+        - layout_toLeftOf
+        - layout_toRightOf
+      다른 위젯 상단, 중앙, 하단
+        - layout_alignTop
+        - layout_alignBaseLine
+        - layout_alignBottom
+      다른 위젯의 좌측, 우측
+        - layout_alignLeft
+        - layout_alignRight
+-->
+    <Button
+        android:id="@+id/baseBtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="기준 위젯"/>
+
+    <Button
+        android:layout_alignTop="@+id/baseBtn"
+        android:layout_toLeftOf="@+id/baseBtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="1번"/>
+    <Button
+        android:layout_above="@+id/baseBtn"
+        android:layout_alignLeft="@+id/baseBtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="2번"/>
+
+    <Button
+        android:layout_alignRight="@+id/baseBtn"
+        android:layout_below="@+id/baseBtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="3번"/>
+    <Button
+        android:layout_above="@+id/baseBtn"
+        android:layout_toRightOf="@+id/baseBtn"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="4번"/>
+
+<!--  렐러티브레이아웃 속성을 조합한 xml 코드  -->
+    <Button
+        android:id="@+id/baseBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="기준1"/>
+    <Button
+        android:id="@+id/baseBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="기준2"/>
+    <Button
+        android:layout_above="@+id/baseBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/baseBtn2"
+        android:text="1번"/>
+    <Button
+        android:layout_below="@+id/baseBtn1"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2번"/>
+</RelativeLayout>
