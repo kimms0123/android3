@@ -3,13 +3,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- 숫자 입력을 위한 첫 번째 EditText -->
     <TableRow>
-        <!-- editText 1(숫자 1 입력) -->
         <EditText
             android:id="@+id/Edit1"
             android:layout_span="5"
             android:hint="숫자1 입력"/>
+        <!-- span: 전체 너비 차지
+             hint: 사용자에게 입력 유도
+         -->
     </TableRow>
+
+    <!-- 숫자 입력을 위한 두 번째 EditText -->
     <TableRow>
         <EditText
             android:id="@+id/Edit2"
@@ -17,7 +22,7 @@
             android:hint="숫자 2 입력"/>
     </TableRow>
 
-    <!-- 숫자 버튼 5개 -->
+    <!-- 숫자 버튼 0~4 -->
     <TableRow>
         <Button
             android:id="@+id/btnNum0"
@@ -36,7 +41,7 @@
             android:text="4"/>
     </TableRow>
 
-    <!-- 숫자 버튼 5개 -->
+    <!-- 숫자 버튼 5~9 -->
     <TableRow>
         <Button
             android:id="@+id/btnNum5"
@@ -55,7 +60,7 @@
             android:text="9"/>
     </TableRow>
 
-    <!-- 연산 버튼 4개 -->
+    <!-- 사칙연산 버튼: 각 버튼이 전체 행(span=5)을 차지하도록 구성 -->
     <TableRow>
         <Button
             android:id="@+id/plus"
@@ -63,6 +68,7 @@
             android:layout_span="5"
             android:text="더하기"/>
     </TableRow>
+
     <TableRow>
         <Button
             android:id="@+id/minus"
@@ -70,6 +76,7 @@
             android:layout_span="5"
             android:text="빼기"/>
     </TableRow>
+
     <TableRow>
         <Button
             android:id="@+id/mul"
@@ -77,6 +84,7 @@
             android:layout_span="5"
             android:text="곱하기"/>
     </TableRow>
+
     <TableRow>
         <Button
             android:id="@+id/div"
@@ -84,13 +92,19 @@
             android:layout_span="5"
             android:text="나누기"/>
     </TableRow>
+
+    <!-- 결과 출력용 텍스트뷰 -->
     <TableRow>
         <TextView
             android:id="@+id/result"
             android:layout_margin="5dp"
             android:layout_span="5"
             android:text="계산결과: "
-            android:textColor="#FF0000"
-            android:textSize="20dp"/>
+        android:textColor="#FF0000"
+        android:textSize="20dp"/>
     </TableRow>
+    <!-- text: 초기 텍스트
+         color: 텍스트 색
+         size: 보기 쉬운 크기로 설정
+     -->
 </TableLayout>
