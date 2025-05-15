@@ -71,7 +71,7 @@
 
     <TableRow>
         <Button
-            android:id="@+id/minus"
+            android:id="@+id/sub"
             android:layout_margin="5dp"
             android:layout_span="5"
             android:text="빼기"/>

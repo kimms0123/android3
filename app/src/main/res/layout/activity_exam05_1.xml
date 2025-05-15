@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="@drawable/cat"
+    android:foregroundGravity="center|fill_horizontal">
+    <!--
+        foreground: 프레임아웃의 전겨 이미지 지정
+        foregroundGravity: 전경 이미지의 위치 지정
+            - fill
+            - right
+            - left
+            - top
+            - bottom
+     -->
+
+    <!-- 3개의 위젯 모두 왼쪽 상단에 겹쳐 출력됨 -->
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"/>
+</FrameLayout>

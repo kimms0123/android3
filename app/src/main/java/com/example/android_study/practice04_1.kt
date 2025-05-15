@@ -40,7 +40,7 @@ class practice04_1 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.active_practice04_1)
+        setContentView(R.layout.activity_practice04_1)
 
         // 앱 타이틀 설정
         title = "테이블레이아웃 계산기"
@@ -49,7 +49,7 @@ class practice04_1 : AppCompatActivity() {
         edit1 = findViewById(R.id.Edit1)
         edit2 = findViewById(R.id.Edit2)
         btnadd = findViewById(R.id.plus)
-        btnsub = findViewById(R.id.minus)
+        btnsub = findViewById(R.id.sub)
         btnMul = findViewById(R.id.mul)
         btnDiv = findViewById(R.id.div)
         textResult = findViewById(R.id.result)
