@@ -50,6 +50,9 @@ class exam06_1 : AppCompatActivity() {
         tvHour = findViewById<TextView>(R.id.tvhour)
         tvMinute = findViewById<TextView>(R.id.tvminite)
 
+        rdoCal.visibility = View.INVISIBLE
+        rdoTime.visibility = View.INVISIBLE
+
         // 초기 상태로 시간, 날짜 선택기 모두 숨김
         tPicker.visibility = View.INVISIBLE
         dPicker.visibility = View.INVISIBLE
@@ -71,6 +74,8 @@ class exam06_1 : AppCompatActivity() {
             chrono.start()                                 // 크로노미터 시작
             Log.d("chronoTest", "click d ")                // 로그 출력 (디버깅용)
             chrono.setTextColor(Color.RED)                 // 글자색 빨간색 (진행 중 표시)
+            rdoCal.visibility = View.VISIBLE
+            rdoTime.visibility = View.VISIBLE
         }
 
         // 연도 텍스트뷰 롱 클릭 시 (예약 완료 역할)
@@ -86,6 +91,11 @@ class exam06_1 : AppCompatActivity() {
             // 선택한 시간 출력
             tvHour.text = Integer.toString(tPicker.hour)
             tvMinute.text = Integer.toString(tPicker.minute)
+
+            rdoCal.visibility = View.INVISIBLE
+            rdoTime.visibility = View.INVISIBLE
+            tPicker.visibility = View.INVISIBLE
+            dPicker.visibility = View.INVISIBLE
             true    // 롱클릭 이벤트 소비
         }
 
