@@ -29,6 +29,8 @@
     <DatePicker
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:spinnersShown="true"
         android:datePickerMode="spinner"/>
     <!-- 캘린더 뷰 -->
     <CalendarView
