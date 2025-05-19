@@ -44,6 +44,12 @@
         android:max="100"
         android:progress="20"
         android:secondaryProgress="50"/>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="20"
+        android:secondaryProgress="50"/>
 
     <!--
         SeekBar: 사용자가 터치로 임의 조절 가능(프로그래스바 하위 클래스)
