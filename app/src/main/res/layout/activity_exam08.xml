@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    TabHost: 여러 탭을 두고 각 탭을 클릭할 때마다 해당 화면이 나오도록 설정하는 뷰 컨테이너 (ex. 인터넷 익스프로러의 상단 탭)
+        ! 탭호스트, 탭위젯, 프레임레이아웃은 id가 지정되어 있는데 이 지정된 id를 변경하지 말고 그대로 사용해야 안드로이드가 탭호스트의 구성을 인식함
+    xml 구성 탭호스트
+    ```
+        <탭호스트 id="@android:id/tabhost">
+            <리니어레이아웃>
+                <탑위젯 id="@android:id/tabs"/>
+                <프레임레이아웃 id="@android:id/tabcontent"/>
+                    // 이곳에 각 탭 스펙에 대응할 탭 화면(레이아웃 삽입)
+                <프레임레이아웃/>
+            <리니어레이아웃/>
+        <탭호스트/>
+    ```
+    각 탭과 대응되는 탭 화면(레이아웃)의 연결은 kotlin에서 진행함
+-->
+
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@android:id/tabhost">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TabWidget
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@android:id/tabs">
+        </TabWidget>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@android:id/tabcontent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tabSong"
+                android:orientation="vertical"
+                android:background="#f00000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tabArtist"
+                android:orientation="vertical"
+                android:background="#f0f000">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tabAlbum"
+                android:orientation="vertical"
+                android:background="#f000ff">
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>
+
+<!--
+    actionbar: 다양한 크기의 화면을 디자인하는데 활용 가능하며, 메뉴를 대체하여 사용 가능
+        ! 내비게이션 모드(Navigation mode)를 롤리팝 이후에는 지양하나 현재도 앱 개발에 많이 사용되고 있음. (롤리팝부터는 툴바 위젯 사용)
+    fragment: 액티비티보다 작은 단위의 화면/ 대형화면에서 액티비티 화면을 분할하여 표현 가능하며, 소형화면에서는 화면의 분할보다는 실행 중 화면의 동적으로 추가하거나 제거 가능
+
+    kotlin코드로 진행
+
+-->
