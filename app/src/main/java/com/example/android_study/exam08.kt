@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 class exam08 : TabActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_practice08)
+        setContentView(R.layout.activity_exam08)
 
         // exam08
         /*
@@ -19,7 +19,7 @@ class exam08 : TabActivity() {
         var tabSpec1 = tabHost.newTabSpec("TAB1").setIndicator("탭에 출력될 글자")
         tabSpec1.setContent(R.id.tab1)   // 탭스펙을 탭과 연결
         tabHost.addTab(tabSpec1)            // 탭을 탭호스트에 부착
-        // - tabSpec: 탭을 구성하는 요소들의 집합(= 탭스펙을 준비해 탭호스트에 붙여넣으면 탭이 됨)
+        // - tabSpec: 탭을 구성하는 요소들의 집합(= 탭스펙을 준비해 탭호스트에 붙여넣으면 탭이 됨)*/
 
         // TabHost 객체 가져오기
         var tabHost = this.tabHost
@@ -40,7 +40,7 @@ class exam08 : TabActivity() {
         tabHost.addTab(tabSpecAlbum)
 
         tabHost.currentTab = 0 // 처음 시작할 때 첫번째 탭("음악별")이 선택 되도록 설정
-        */
+
 
     }
 }
